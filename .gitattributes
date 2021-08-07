@@ -1,0 +1,1 @@
+weight_files/pytorch/karras2019stylegan-ffhq-1024x1024.pt filter=lfs diff=lfs merge=lfs -text

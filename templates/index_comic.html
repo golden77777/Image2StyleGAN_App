@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>character_generate</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+  <body>
+    <head>
+     <meta charset="UTF-8">
+     <title>画像一覧</title>
+     <style type="text/css">
+       html {
+         font-size: 62.5%;
+         text-align: center;
+       }
+       h1 {
+         font-size: 4rem;
+       }
+       h2 {
+         font-size: 2.5rem;
+       }
+       h3 {
+         font-size: 3rem;
+       }
+       img {
+         float:left;
+         max-width: 32%;
+         width: 32%;
+         cursor: pointer;
+         margin-right:2%;
+         border:2px solid #eee;
+         box-sizing:border-box;
+       }
+     </style>
+     <style type="text/css">
+     .example {/*親div*/
+       position: relative;/*相対配置*/
+       }
+
+     .example p {
+       position: absolute;/*絶対配置*/
+       color: black;/*文字は白に*/
+       font-weight: bold;
+       font-size: 2em;
+       margin-left:1%;
+       top: 0;
+       left: 0;
+       }
+
+     .example img {
+       width: 100%;
+       }
+     </style>
+
+
+     <style type="text/css">
+     .example2 {/*親div*/
+       position: relative;/*相対配置*/
+       }
+
+     .example2 p {
+       position: absolute;/*絶対配置*/
+       color: black;/*文字は白に*/
+       font-weight: bold;
+       font-size: 2em;
+       margin-left:1%;
+       top: 0;
+       left: 35%;
+       }
+
+     .example2 img {
+       width: 100%;
+       }
+     </style>
+
+     <style type="text/css">
+     .example4 {/*親div*/
+       position: relative;/*相対配置*/
+       }
+
+     .example4 p {
+       position: absolute;/*絶対配置*/
+       color: black;/*文字は白に*/
+       font-weight: bold;
+       font-size: 2em;
+       margin-left:1%;
+       margin-top:30%;
+       top: 0;
+       left: 35%;
+       }
+
+     .example4 img {
+       width: 100%;
+       }
+     </style>
+
+     <style type="text/css">
+     .example3 {/*親div*/
+       position: relative;/*相対配置*/
+       }
+
+     .example3 p {
+       position: absolute;/*絶対配置*/
+       color: black;/*文字は白に*/
+       font-weight: bold;
+       font-size: 2em;
+       margin-left:1%;
+       margin-top:25%;
+       top: 0%;
+       bottom: 0%;
+       left: 0;
+       }
+
+     .example3 img {
+       width: 100%;
+       }
+     </style>
+
+     <style type="text/css">
+     .example5 {/*親div*/
+       position: relative;/*相対配置*/
+       }
+
+     .example5 p {
+       position: absolute;/*絶対配置*/
+       color: white;/*文字は白に*/
+       font-weight: bold;
+       font-size: 2em;
+       margin-left:1%;
+       margin-top:60%;
+       top: 0%;
+       bottom: 0%;
+       left: 0;
+       }
+
+     .example5 img {
+       width: 100%;
+       }
+     </style>
+
+     <style type="text/css">
+     .example6 {/*親div*/
+       position: relative;/*相対配置*/
+       }
+
+     .example6 p {
+       position: absolute;/*絶対配置*/
+       color: white;/*文字は白に*/
+       font-weight: bold;
+       font-size: 2em;
+       margin-left:1%;
+       margin-top:60%;
+       top: 0;
+       left: 35%;
+       }
+
+     .example6 img {
+       width: 100%;
+       }
+     </style>
+
+
+
+     <style type="text/css">
+       html {
+         font-size: 62.5%;
+         text-align: left;
+       }
+       h4 {
+         font-size: 2.5rem;
+       }
+       img {
+         float:left;
+         max-width: 32%;
+         width: 32%;
+         cursor: pointer;
+         margin-right:2%;
+         border:2px solid #eee;
+         box-sizing:border-box;
+       }
+     </style>
+
+
+   </head>
+
+   <form action="/make" method="post">
+     <body>
+       <h1>画像一覧</h1>
+        <!-- <img src="../templates/sample_images/sample_03.png" width="300" height="400"onclick="imgwin('sample_03.png')"/> -->
+       <p>
+         <div class="example">
+            <img src="../templates/sample_images/abeshinzo_save_pillow_01.png" width="300" height="400"/>
+           <p>No.1</p>
+         </div>
+
+         <div class="example2">
+            <img src="../templates/sample_images/obama_save_pillow_01.png" width="300" height="400"/>
+           <p>No.2</p>
+         </div>
+
+         <div class="example3">
+            <img src="../templates/sample_images/trump_save_pillow_01.png" width="300" height="400"/>
+           <p>No.3</p>
+         </div>
+
+         <!-- <div class="example4">
+            <img src="../templates/sample_images/sample_02.png" width="300" height="400"/>
+           <p>No.4</p>
+         </div>
+
+         <div class="example5">
+            <img src="../templates/sample_images/sample_04.png" width="300" height="400"/>
+           <p>No.5</p>
+         </div>
+
+         <div class="example6">
+            <img src="../templates/sample_images/sample_06.png" width="300" height="400"/>
+           <p>No.6</p>
+         </div> -->
+
+     </p>
+     <script type="text/javascript">
+     function imgwin(img){
+       window.open("../templates/sample_images/"+img, "imgwindow", "width=866,height=580");
+     }
+     function clickTextRewrite() {
+       document.getElementById("text-button").textContent="Clicked!";
+     }
+     function OnButtonClick() {
+      target = document.getElementById("output");
+      target.innerHTML = "Penguin";
+    }
+    function abc(abc){
+      return "abc";
+       }
+     </script>
+   </body>
+
+
+
+
+
+   <h2>ベースにしたい顔を選択してください</h2>
+   <input type="number" id="tentacles" name="tentacles1"min="1" max="3"
+   oninput="document.getElementById('tentacles1').value=this.value">
+   <output id="tentacles1"></output>
+
+     <!-- <input type="range" value="1" min="1" max="1000" step="1" name="test1"
+       oninput="document.getElementById('test1').value=this.value">
+       <output id="test1">1</output> -->
+       <br>
+       <h2>誇張させたい顔を選択し、誇張の度合いを設定してください</h2>
+
+       <input type="number" id="tentacles" name="tentacles2"min="1" max="3"
+       oninput="document.getElementById('tentacles2').value=this.value">
+       <output id="tentacles2"></output>
+     <input type="range" value="1" min="0" max="2" step="0.05" name="test2"
+       oninput="document.getElementById('test2').value=this.value">
+
+       <output id="test2">1</output>
+       <br>
+       <!-- <h2>3番目に選択した画像の比率</h2>
+
+       <input type="number" id="tentacles" name="tentacles3"min="1" max="6"
+       oninput="document.getElementById('tentacles3').value=this.value">
+       <output id="tentacles3"></output>
+     <input type="range" value="1" min="1" max="1000" step="1" name="test3"
+       oninput="document.getElementById('test3').value=this.value">
+       <output id="test3">1</output>
+       <br>
+       <h2>4番目に選択した画像の比率</h2>
+       <input type="number" id="tentacles" name="tentacles4"min="1" max="6"
+       oninput="document.getElementById('tentacles4').value=this.value">
+       <output id="tentacles4"></output>
+     <input type="range" value="1" min="1" max="1000" step="1" name="test4"
+       oninput="document.getElementById('test4').value=this.value">
+
+       <output id="test4">1</output>
+       <br>
+       <h2>5番目に選択した画像の比率</h2>
+       <input type="number" id="tentacles" name="tentacles5"min="1" max="6"
+       oninput="document.getElementById('tentacles5').value=this.value">
+       <output id="tentacles5"></output>
+     <input type="range" value="1" min="1" max="1000" step="1" name="test5"
+       oninput="document.getElementById('test5').value=this.value">
+       <output id="test5">1</output>
+       <script>
+       var test1 = Number(test1);
+       var test2 = Number(test2); -->
+     </script>
+       <button name="test10" value="顔生成">誇張顔を生成</button>
+   </form>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ <h3>誇張後の生成顔はこちらです</h3>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript">
+    function chgImg(){
+      var timestamp = new Date().getTime();
+      document.img1.src = "../templates/new_contents_test_comic13.png?" + timestamp;
+    }
+  </script>
+</head>
+<body>
+  <img name="img1" src="../templates/new_contents_test_comic13.png" style= "margin-top: -280px;margin-left: 1100px; vertical-align: bottom; width: 450px;" width="500" height="500">
+  <input type="button" style="margin-left: 550px;margin-top: -30px;height:-100px;" value="画像更新" onclick="chgImg();">
+</body>
+
+</body>
+</html>
