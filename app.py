@@ -193,9 +193,9 @@ def test():
         ims = []
         #c = str(c)
 
-        img = cv2.imread("templates/new_contents_test_web9.png")
+        img = cv2.imread("templates/new_contents_test_real_19.png")
         #img = synth_img.clamp(0,1)
-        save_path = os.path.join("new_contents_test_web9" + ".png")
+        save_path = os.path.join("new_contents_test_real_19" + ".png")
         cv2.imwrite(save_path, img)
         time.sleep(2)
 
